@@ -22,7 +22,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('🌐 Support', url=f'https://t.me/greymatters_bots_discussion')
+                InlineKeyboardButton('🌐 Support', url=f'https://t.me/mcrequestbot')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/GreyMatter_Bots')
+            InlineKeyboardButton('📢 Updates', url='https://t.me/Lordshiptv')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -56,7 +56,7 @@ async def save_group(bot, message):
                 temp.MELCOW['welcome'] = await message.reply_video(
                 video="https://telegra.ph/file/03691465baa774e46506d.mp4",                                               
                                                  caption=f'<b>ʜᴇʏ, {u.mention} 👋🏻\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ ɢʀᴏᴜᴘ {message.chat.title}\n\nʏᴏᴜ ᴄᴀɴ ꜰɪɴᴅ ᴍᴏᴠɪᴇꜱ / ꜱᴇʀɪᴇꜱ / ᴀɴɪᴍᴇꜱ ᴇᴛᴄ. ꜰʀᴏᴍ ʜᴇʀᴇ. ᴇɴᴊᴏʏ😉.\n\n<b>┏≫ ғᴏʟʟᴏᴡ ɢʀᴏᴜᴘ ʀᴜʟᴇs</b>\n┣ <b>ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ›› @greymatter_bots</b></code>\n<b>┗≫ ғᴏʟʟᴏᴡ ɢʀᴏᴜᴘ ʀᴜʟᴇs</b>',
-                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('➡️ɢʀᴏᴜᴘ ʀᴜʟᴇs⬅️', url='http://t.me/MissRose_bot?start=rules_-1001820559841') ] ] )
+                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('➡️ɢʀᴏᴜᴘ ʀᴜʟᴇs⬅️', url='https://t.me/Tess_thompson/537121') ] ] )
                 )
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
@@ -70,12 +70,12 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('🌐 Support', url=f'https://t.me/greymatters_bots_discussion')
+            InlineKeyboardButton('🌐 Support', url=f'https://t.me/mcrequestbot')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b>',
+            text='<b>Hello Friends, \nMy admin has told me to leave from your group, so I Am leaving.! If you wanna add me again contact my support group.</b>',
             reply_markup=reply_markup,
         )
 
@@ -109,12 +109,12 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('🌐 Support', url=f'https://t.me/greymatters_bots_discussion')
+            InlineKeyboardButton('🌐 Support', url=f'https://t.me/mcrequestbot')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat_, 
-            text=f'<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b> \nReason : <code>{reason}</code>',
+            text=f'<b>Hello Friends, \nMy admin has told me to leave from your group, so I Am leaving.! If you wanna add me again contact my support group.</b> \nReason : <code>{reason}</code>',
             reply_markup=reply_markup)
         await bot.leave_chat(chat_)
     except Exception as e:
@@ -226,7 +226,7 @@ async def unban_a_user(bot, message):
     except PeerIdInvalid:
         return await message.reply("This is an invalid user, make sure ia have met him before.")
     except IndexError:
-        return await message.reply("Thismight be a channel, make sure its a user.")
+        return await message.reply("This might be a channel, make sure its a user.")
     except Exception as e:
         return await message.reply(f'Error - {e}')
     else:
