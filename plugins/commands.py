@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('⚡ 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 ⚡', url='https://t.me/Lordship_series')
+                InlineKeyboardButton('⚡ 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 ⚡', url='https://t.me/LordshipMovies')
             ],
             [
                 InlineKeyboardButton('🔞 ADULT BOT 🔞', url=f"https://t.me/Adultship"),
@@ -45,7 +45,7 @@ async def start(client, message):
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔞 ADULT BOT 🔞', url='https://t.me/Adultship'),
-            InlineKeyboardButton('🍿 UᎮDΛTΞS 🍿', url='https://t.me/Lordship_series')
+            InlineKeyboardButton('🍿 UᎮDΛTΞS 🍿', url='https://t.me/LordshipMovies')
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
@@ -91,7 +91,7 @@ async def start(client, message):
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('⚡ ADULT BOT ⚡', url='https://t.me/Adultship'),
-            InlineKeyboardButton('🍿 UᎮDΛTΞS 🍿', url='https://t.me/Lordship_series')
+            InlineKeyboardButton('🍿 UᎮDΛTΞS 🍿', url='https://t.me/LordshipMovies')
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
